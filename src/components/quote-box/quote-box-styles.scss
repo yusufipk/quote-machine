@@ -1,14 +1,30 @@
 .wrapper {
   display: flex;
   justify-content: center;
+  align-content: center;
+  height: 950px;
 
   #quote-box {
+    display: flexbox;
+    align-self: center;
     color: white;
-    width: 550px;
-    height: 350px;
+    width: 800px;
+    height: 400px;
     background-color: black;
     border: 1px solid grey;
     border-radius: 5px;
     padding: 10px;
+  }
+
+  .writing {
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  #button {
+    float: right;
+    bottom: 400px;
+    right: 95px;
+    position: fixed;
   }
 }
