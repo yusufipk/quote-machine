@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  #quote-box {
+    color: white;
+    width: 550px;
+    height: 350px;
+    background-color: black;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
