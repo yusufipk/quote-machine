@@ -65,14 +65,41 @@ class QuoteBox extends React.Component {
       <div className="wrapper">
         <div
           id="quote-box"
-          style={{ backgroundColor: this.state.color[this.random2()] }}
+          style={{
+            transition: "background-color 0.3s ease",
+            backgroundColor: this.state.color[this.random2()],
+          }}
         >
           <div className="writing">
             <h3 id="text">{this.state.displayQuote}</h3>
             <p id="author">{this.state.displayAuthor}</p>
           </div>
-          <div id="button">
-            <QuoteButton click={this.handleChange} />
+          <div id="new-quote">
+            <QuoteButton
+              click={this.handleChange}
+              text="New Quote"
+              variant="success"
+            />
+          </div>
+          <div id="tweet">
+            <QuoteButton
+              href={`https://twitter.com/intent/tweet?text=${this.state.displayQuote} 
+              
+              ${this.state.displayAuthor}`}
+              text={
+                <a
+                  id="tweet-quote"
+                  target="_blank"
+                  rel="noreferrer"
+                  href={`https://twitter.com/intent/tweet?text=${this.state.displayQuote} 
+              
+              ${this.state.displayAuthor}`}
+                >
+                  Tweet
+                </a>
+              }
+              variant="primary"
+            />
           </div>
         </div>
       </div>

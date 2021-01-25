@@ -17,11 +17,29 @@
   }
 
   .writing {
-    padding-top: 100px;
+    padding-top: 130px;
+    height: 150px;
     text-align: center;
   }
 
-  #button {
+  #new-quote {
+    margin-top: 80px;
     float: right;
+  }
+
+  #tweet {
+    float: right;
+    margin-top: 80px;
+    margin-right: 15px;
+  }
+
+  a:link {
+    color: white;
+  }
+  a:visited {
+    color: white;
+  } /* visited link */
+  a:active {
+    color: white;
   }
 }

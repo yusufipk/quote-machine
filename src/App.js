@@ -6,7 +6,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      backG: null,
+      backG: "#2a9d8f",
     };
   }
 
@@ -19,7 +19,13 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" style={{ backgroundColor: this.state.backG }}>
+      <div
+        className="App"
+        style={{
+          transition: "background-color 0.3s ease",
+          backgroundColor: this.state.backG,
+        }}
+      >
         <QuoteBox id="quote" handler={this.bgChange} />
       </div>
     );

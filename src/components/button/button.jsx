@@ -3,8 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export const QuoteButton = (props) => {
   return (
-    <Button variant="outline-primary" onClick={props.click}>
-      New Quote
+    <Button
+      variant={props.variant}
+      href={props.href}
+      target={props.target}
+      onClick={props.click}
+    >
+      {props.text}
     </Button>
   );
 };
