@@ -9,7 +9,9 @@ class QuoteBox extends React.Component {
       quotes: null,
       displayQuote: null,
       displayAuthor: null,
+      // color for the box
       color: ["#264653", "#2a9d8f", "#e76f51", "#e63946", "#bc6c25"],
+      // color for the app.js body
       backGroundApp: [
         "#ffadad",
         "#ffd6a5",
@@ -43,6 +45,7 @@ class QuoteBox extends React.Component {
     });
   }
 
+  //changing the quotes and author also sending a bg to app.js
   handleChange = () => {
     const randomNum = this.random();
     this.setState({
