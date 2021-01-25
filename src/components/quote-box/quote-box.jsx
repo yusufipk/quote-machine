@@ -89,6 +89,7 @@ class QuoteBox extends React.Component {
               href={`https://twitter.com/intent/tweet?text=${this.state.displayQuote} 
               
               ${this.state.displayAuthor}`}
+              target="_blank"
               text={
                 <a
                   id="tweet-quote"
