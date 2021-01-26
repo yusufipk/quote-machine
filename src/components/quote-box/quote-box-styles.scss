@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 954px;
+  height: 100vh;
 
   #quote-box {
     display: flexbox;
@@ -16,19 +16,19 @@
   }
 
   .writing {
-    padding-top: 130px;
+    padding-top: 16vh;
     height: 150px;
     text-align: center;
   }
 
   #new-quote {
-    margin-top: 100px;
+    margin-top: 150px;
     float: right;
   }
 
   #tweet {
     float: right;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-right: 15px;
   }
 
@@ -40,5 +40,21 @@
   } /* visited link */
   a:active {
     color: white;
+  }
+  @media only screen and (max-width: 500px) {
+    #new-quote,
+    #tweet {
+      margin-top: -150px;
+    }
+    #tweet {
+      margin-right: 115px;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .writing {
+      h3 {
+        font-size: 22px;
+      }
+    }
   }
 }
